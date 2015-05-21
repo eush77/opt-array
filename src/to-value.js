@@ -6,6 +6,6 @@ module.exports = function (value) {
     return value;
   }
 
-  var asNumber = Number.parseInt(value);
+  var asNumber = parseInt(value);
   return String(asNumber) == value ? asNumber : value;
 };

@@ -2,7 +2,7 @@
 
 # opt-array
 
-[![Dependency Status][david-badge]][david]
+[![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david]
 
 The minimal option parser that returns options in array, so that you can process your options in the order they appear in.
 
@@ -19,6 +19,8 @@ Supported formats:
 - `--no-long-option` — long option with value `false`;
 - `-- other args` — arguments after `--` are not recognized as options.
 
+[travis]: https://travis-ci.org/eush77/opt-array
+[travis-badge]: https://travis-ci.org/eush77/opt-array.svg
 [david]: https://david-dm.org/eush77/opt-array
 [david-badge]: https://david-dm.org/eush77/opt-array.png
 

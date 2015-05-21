@@ -29,14 +29,14 @@ var optArray = require('opt-array');
 
 optArray(['-abc', '-i', 'file', '4', '-n2', '--no-verbose', '--depth=4', '--', '-s', 'A'])
 
-//=> [{ key: 'a', value: true },
-//    { key: 'b', value: true },
-//    { key: 'c', value: true },
-//    { key: 'i', value: 'file' },
+//=> [{ option: 'a', value: true },
+//    { option: 'b', value: true },
+//    { option: 'c', value: true },
+//    { option: 'i', value: 'file' },
 //    { value: '4' },
-//    { key: 'n', value: 2 },
-//    { key: 'verbose', value: false },
-//    { key: 'depth', value: 4 },
+//    { option: 'n', value: 2 },
+//    { option: 'verbose', value: false },
+//    { option: 'depth', value: 4 },
 //    { value: '-s' },
 //    { value: 'A' }]
 ```

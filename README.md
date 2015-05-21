@@ -52,7 +52,7 @@ Each entry may have the following keys:
 ```js
 {
   option: 'name', // string, for options only
-  value: 'value' // string, number (for numeric-looking values), true, or false
+  value: 'value' // string, number (for numeric-looking options), true, or false
 }
 ```
 

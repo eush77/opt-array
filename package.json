@@ -7,7 +7,10 @@
   "scripts": {
     "test": "tape test/*.js"
   },
-  "files": [],
+  "files": [
+    "index.js",
+    "src/"
+  ],
   "homepage": "https://github.com/eush77/opt-array",
   "repository": {
     "type": "git",

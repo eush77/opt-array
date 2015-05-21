@@ -1,0 +1,27 @@
+{
+  "name": "opt-array",
+  "version": "0.0.0",
+  "description": "Minimist-inspired option parser that cares about the order",
+  "author": "Eugene Sharygin <eush77@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/eush77/opt-array",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eush77/opt-array"
+  },
+  "bugs": {
+    "url": "https://github.com/eush77/opt-array/issues"
+  },
+  "keywords": [
+    "minimist",
+    "parser",
+    "argv",
+    "getopt",
+    "order",
+    "option",
+    "cli",
+    "array"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -4,6 +4,10 @@
   "description": "Minimist-inspired option parser that cares about the order",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "files": [],
   "homepage": "https://github.com/eush77/opt-array",
   "repository": {
     "type": "git",
@@ -23,5 +27,7 @@
     "array"
   ],
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
 }

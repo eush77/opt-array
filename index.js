@@ -29,12 +29,12 @@ var extract = {
       // End-of-options mark.
       return this.endOfOptionsMark(argv, optv);
     }
-    else if (match = option.match(/^--(\w[\w-]*)=(\w[\w-]*)$/)) {
+    else if (match = option.match(/^--([^-].*?)=(.+)$/)) {
       // Long option with value.
       argv.unshift(match[2]);
       return this.longOption(match[1], argv, optv);
     }
-    else if (match = option.match(/^--(\w[\w-]*)$/)) {
+    else if (match = option.match(/^--([^=-][^=]*)$/)) {
       // Long option.
       return this.longOption(match[1], argv, optv);
     }
@@ -64,14 +64,7 @@ var extract = {
   longOption: function (option, argv, optv) {
     var match;
 
-    if (match = option.match(/^(.*)=(.*)$/)) {
-      // Long option with value.
-      optv.push({
-        option: match[1],
-        value: match[2]
-      });
-    }
-    else if (match = option.match(/^no-(.*)$/)) {
+    if (match = option.match(/^no-(.*)$/)) {
       // Boolean option, false.
       optv.push({
         option: match[1],
